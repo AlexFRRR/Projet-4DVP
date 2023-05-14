@@ -1,0 +1,14 @@
+version: 2
+updates:
+
+  #Package séléctionner pour vérifié si il y a une update
+  - package-ecosystem: "go"
+    directory: "/"
+    schedule:
+      #Intervalle journalière
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule: 
+      interval: "daily"
